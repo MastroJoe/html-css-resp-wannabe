@@ -1,0 +1,158 @@
+/* GENERALI */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* LEZIONI */
+
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* STEPS */
+
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* WHY */
+
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+/* COMMON */
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* media query */
+
+@media screen and (max-width: 420px){
+
+  .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  /* lezioni */
+  #lezioni{
+    background-color: #e2da8e;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    float: left;
+    font-size: 12px;
+  }
+
+  /* lezioni */
+  h3{
+    font-size: 1.5em;
+  }
+  /* steps */
+  .container.grey {
+    background-color: #ffffff;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #steps .row img{
+    margin-top: 15px;
+  }
+  /* steps */
+
+
+  /* why */
+  #why{
+    background-color: #e2da8e;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+
+  hr{
+    background-color: #000000;
+  }
+
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 15px;
+  }
+  /* why */
+}
